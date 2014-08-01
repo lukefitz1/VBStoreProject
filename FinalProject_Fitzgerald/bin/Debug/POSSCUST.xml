@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Requests>
+   <Information_Request>
+      <Name>asdf</Name>
+      <City>asdf</City>
+      <State>New Hampshire</State>
+      <Zip_Code>12345</Zip_Code>
+      <Phone>1234512345</Phone>
+      <Account_Type>Retail Account</Account_Type>
+   </Information_Request>
+</Requests>

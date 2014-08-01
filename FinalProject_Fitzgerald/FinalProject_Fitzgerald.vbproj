@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{62B6B559-4EAF-42AC-BDDC-6D99A46843B5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FinalProject_Fitzgerald.My.MyApplication</StartupObject>
+    <RootNamespace>FinalProject_Fitzgerald</RootNamespace>
+    <AssemblyName>FinalProject_Fitzgerald</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FinalProject_Fitzgerald.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FinalProject_Fitzgerald.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accountHome.Designer.vb">
+      <DependentUpon>accountHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="accountHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="accountInquiry.Designer.vb">
+      <DependentUpon>accountInquiry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="accountInquiry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="accountLogin.Designer.vb">
+      <DependentUpon>accountLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="accountLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="accountTypes.Designer.vb">
+      <DependentUpon>accountTypes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="accountTypes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buyProducts.Designer.vb">
+      <DependentUpon>buyProducts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="buyProducts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changeAccountInfo.Designer.vb">
+      <DependentUpon>changeAccountInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="changeAccountInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="completeTransaction.Designer.vb">
+      <DependentUpon>completeTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="completeTransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doubleChecking.Designer.vb">
+      <DependentUpon>doubleChecking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="doubleChecking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalProject_DB_FitzgeraldDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinalProject_DB_FitzgeraldDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="generalStoreInfo.Designer.vb">
+      <DependentUpon>generalStoreInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="generalStoreInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="moreInfoRequest.Designer.vb">
+      <DependentUpon>moreInfoRequest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="moreInfoRequest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productInfo.Designer.vb">
+      <DependentUpon>productInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="productInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shoppingCart.Designer.vb">
+      <DependentUpon>shoppingCart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="shoppingCart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="storeProfile.Designer.vb">
+      <DependentUpon>storeProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="storeProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcomeScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcomeScreen.Designer.vb">
+      <DependentUpon>welcomeScreen.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="accountHome.resx">
+      <DependentUpon>accountHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="accountInquiry.resx">
+      <DependentUpon>accountInquiry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="accountLogin.resx">
+      <DependentUpon>accountLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="accountTypes.resx">
+      <DependentUpon>accountTypes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buyProducts.resx">
+      <DependentUpon>buyProducts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changeAccountInfo.resx">
+      <DependentUpon>changeAccountInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="completeTransaction.resx">
+      <DependentUpon>completeTransaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doubleChecking.resx">
+      <DependentUpon>doubleChecking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generalStoreInfo.resx">
+      <DependentUpon>generalStoreInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="moreInfoRequest.resx">
+      <DependentUpon>moreInfoRequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productInfo.resx">
+      <DependentUpon>productInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shoppingCart.resx">
+      <DependentUpon>shoppingCart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="storeProfile.resx">
+      <DependentUpon>storeProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcomeScreen.resx">
+      <DependentUpon>welcomeScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FinalProject_DB_FitzgeraldDataSet.xsc">
+      <DependentUpon>FinalProject_DB_FitzgeraldDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProject_DB_FitzgeraldDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FinalProject_DB_FitzgeraldDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FinalProject_DB_FitzgeraldDataSet.xss">
+      <DependentUpon>FinalProject_DB_FitzgeraldDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Final Logo2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FinalProject_DB_Fitzgerald.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
